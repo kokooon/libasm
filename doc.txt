@@ -1,0 +1,12 @@
+https://refspecs.linuxbase.org/elf/x86_64-abi-0.99.pdf
+https://www.tutorialspoint.com/assembly_programming/assembly_system_calls.htm
+http://www.lacl.fr/tan/asm
+https://zestedesavoir.com/articles/pdf/130/programmez-en-langage-dassemblage-sous-linux.pdf
+
+//sys-calls
+https://sites.uclouvain.be/SystInfo/usr/include/asm-generic/unistd.h.html
+//sys-call arch=x86_64
+https://syscalls.w3challs.com/?arch=x86_64
+//instructions assembleur
+https://www.gladir.com/LEXIQUE/ASM/test.htm
+https://www.esaracco.fr/documentation/assembly/assembly/copie-de-chaine.html

@@ -1,6 +1,6 @@
-global _start
+global ft_hello_world
 section     .text
-_start:
+ft_hello_world:
     mov         rax, 1
     mov         rdi, 1
     mov         rsi, message
