@@ -10,3 +10,6 @@ https://syscalls.w3challs.com/?arch=x86_64
 //instructions assembleur
 https://www.gladir.com/LEXIQUE/ASM/test.htm
 https://www.esaracco.fr/documentation/assembly/assembly/copie-de-chaine.html
+
+//movsx
+https://www.gladir.com/LEXIQUE/ASM/movsx.htm
