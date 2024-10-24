@@ -6,7 +6,7 @@
 /*   By: gmarzull <gmarzull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/06 14:31:22 by gmarzull          #+#    #+#             */
-/*   Updated: 2024/10/15 17:26:53 by gmarzull         ###   ########.fr       */
+/*   Updated: 2024/10/24 14:26:08 by gmarzull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,24 +39,32 @@
 // 	return (0);
 // }
 
+// int main(void)
+// {
+//     const char *src = "Tripouille";
+
+//     // Ouvrir un fichier en lecture seule (O_RDONLY) et essayer d'écrire dessus
+//     int fd = open("testfile", O_RDONLY | O_CREAT, 0644);
+//     if (fd == -1) {
+//         perror("open");
+//         return 1;
+//     }
+
+//     // Essayer d'écrire dans un fichier ouvert en lecture seule
+//     int result = write(fd, src, 5);
+//     if (result == -1) {
+//         fprintf(stderr, "Error: %s\n", strerror(errno));
+//         fprintf(stderr, "errno value: %d\n", errno);
+//     }
+
+//     close(fd);  // Fermer le fichier
+//     return 0;
+// }
+
 int main(void)
 {
-    const char *src = "Tripouille";
-
-    // Ouvrir un fichier en lecture seule (O_RDONLY) et essayer d'écrire dessus
-    int fd = open("testfile", O_RDONLY | O_CREAT, 0644);
-    if (fd == -1) {
-        perror("open");
-        return 1;
-    }
-
-    // Essayer d'écrire dans un fichier ouvert en lecture seule
-    int result = write(fd, src, 5);
-    if (result == -1) {
-        fprintf(stderr, "Error: %s\n", strerror(errno));
-        fprintf(stderr, "errno value: %d\n", errno);
-    }
-
-    close(fd);  // Fermer le fichier
-    return 0;
+	const char *src = "Tripouille";
+	const char *new = ft_strdup(src);
+	printf("Le dup: %s", new);
+	return (0);
 }

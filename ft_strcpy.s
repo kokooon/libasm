@@ -5,15 +5,15 @@ ft_strcpy:
 	jmp			copy
 
 copy:
-	cmp			byte[rsi + rax]
-	je			exit
 	mov			dl, [rsi + rax]
+	cmp			dl, 0
+	je			exit
 	mov			[rdi + rax], dl
 	inc			rax
 	jmp			copy
 	
 exit:
-	mov			[rdi + rax], 0
+	mov			byte [rdi + rax], 0
 	mov			rax, rdi
 	ret
 
