@@ -6,7 +6,7 @@
 #    By: gmarzull <gmarzull@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/29 12:09:07 by gmarzull          #+#    #+#              #
-#    Updated: 2024/10/15 15:09:26 by gmarzull         ###   ########.fr        #
+#    Updated: 2024/10/24 18:01:24 by gmarzull         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,6 +31,10 @@ all		: $(NAME)
 
 $(NAME) : $(OBJ)
 		ar -rc $(NAME) $(OBJ)
+
+test	: 
+		@gcc -o main main.c -L. -lasm
+		@./main
 
 clean :
 		rm -f $(OBJ)

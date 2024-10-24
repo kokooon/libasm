@@ -6,7 +6,7 @@
 /*   By: gmarzull <gmarzull@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/06 14:30:22 by gmarzull          #+#    #+#             */
-/*   Updated: 2024/10/24 14:28:44 by gmarzull         ###   ########.fr       */
+/*   Updated: 2024/10/24 19:22:06 by gmarzull         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,14 +21,11 @@
 #include <stdio.h>
 #include <stddef.h>
 
-//ssize_t ft_strlen(char *s);
-void	ft_hello_world(void);
 size_t	ft_strlen(const char *s);
-int		ft_strcmp(const char *src, const char *dst);
+int		ft_strcmp(char *dest, const char *src);
 int		ft_write(int fd, const char *buff, size_t len);
-char	*ft_strdup(const char* s);
-char	*ft_strcpy(char *dest, char *src);
-
+char	*ft_strdup(const char *s);
+ssize_t	ft_read(int fd, char *buf, size_t count);
 
 
 #endif
