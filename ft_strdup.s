@@ -9,7 +9,7 @@ ft_strdup:
 	call	ft_strlen
 	add		rax, 1
 	mov		rdi, rax
-	call	malloc
+	call	malloc wrt ..plt
 	test	rax, rax
 	je		malloc_fail
 	pop		r8

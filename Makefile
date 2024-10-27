@@ -6,7 +6,7 @@
 #    By: gmarzull <gmarzull@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/29 12:09:07 by gmarzull          #+#    #+#              #
-#    Updated: 2024/10/24 18:01:24 by gmarzull         ###   ########.fr        #
+#    Updated: 2024/10/27 14:26:23 by gmarzull         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,5 +41,6 @@ clean :
 
 fclean : clean
 		rm -f $(NAME)
+		rm -f text.txt
 
 re : fclean all
